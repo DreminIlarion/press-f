@@ -1,0 +1,114 @@
+{% extends "market_place/base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner-slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" >
+                <img src="{% static "market_place/images/banner/11.jpg" %}" style='height:700px' class="d-block w-100" alt="banner image">
+            </div>
+            
+            <div class="carousel-item">
+                <img src="{% static "market_place/images/banner/12.jpg" %}" style='height:700px' class="d-block w-100" alt="banner image">
+            </div>
+
+            <div class="carousel-item">
+                <img src="{% static "market_place/images/banner/13.png" %}" style='height:700px' class="d-block w-100" alt="banner image">
+            </div>
+
+            <div class="carousel-item" >
+                <img src="{% static "market_place/images/banner/33.jpg" %}" style='height:700px' class="d-block w-100" alt="banner image">
+            </div>
+
+        </div>
+  </div>
+
+{% endblock banner-slider %}
+
+{% block information %}
+<div class='container'>
+    <div class='row bg-dark text-center p-5 text-white border-borrom shadow'>
+        <h1>Product</h1>
+        <small class='fs-5'>We offer records of various genres: rock, pop, jazz, classical, electronic music and much more. Our team is engaged in the search and selection of only the most interesting and high-quality recordings to satisfy the requests of the most refined music lovers.</small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+    <div class='container'>
+        <h2 class='text-center'>Vinyl records</h2>
+        <br></br>
+
+        <div class='row container'>
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'PP' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/pop.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Pop</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'RK' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/rock.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Rock</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'JZ' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/jazz.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Jazz</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'BZ' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/bluuz.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Blues</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'ML' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/metall.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Metal</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration='1s' data-wow-delay='0.6s' style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none;">
+                <div class="goodnesssec pop">
+                    <a href="{% url "category" 'CC' %}">
+                        <div class="goodnessseccont text-center">    
+                            <img width='100%' src="{% static 'market_place/images/product/classic.jpg' %}" class='img-responsive center-block' alt="">
+                            <p class="janr">Classic</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br></br>
+{% endblock main-content %}
